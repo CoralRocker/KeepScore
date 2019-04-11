@@ -13,7 +13,6 @@ Score::Score(size_t size, const char* f)
 	for(int i = 0; i < this->size; i++)
 		this->scoreArray.push_back(std::pair(0, "NULL"));
 	this->trueSize = scoreArray.size();
-	//scoreArray = {{0, "NULL"},{0, "NULL"},{0, "NULL"}, {0, "NULL"}};
 };
 
 std::pair<int, std::string> Score::getPair(size_t place)
