@@ -1,4 +1,4 @@
-#include "SnakeScore.hpp"
+#include "Score.hpp"
 #include <cstdio>
 #include <vector>
 #include <utility>
@@ -107,7 +107,7 @@ void Score::putScore(int score, std::string name, int place)
 		}
 	}
 }
-void Score::putScore(std::pair<int std::string> p, size_t place)
+void Score::putScore(std::pair<int, std::string> p, size_t place)
 {
 	for(int i = size - 1; i >= place; i--)
 	{
