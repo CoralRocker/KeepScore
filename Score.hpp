@@ -1,5 +1,5 @@
-#ifndef SNAKESCORE_H
-#define SNAKESCORE_H
+#ifndef SCORE_H
+#define SCORE_H
 
 #include <vector>
 #include <utility>
@@ -15,10 +15,9 @@ class Score
 		void loadVector();
 		int rankScore(int score);
 		void putScore(int score, std::string name, int place);
-		size_t size;
 	private:
 		std::vector < std::pair < int, std::string > > scoreArray;
-		size_t trueSize;		
+		size_t trueSize, size;
 		const char* file;		
 };
 
