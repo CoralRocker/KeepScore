@@ -15,6 +15,7 @@ class Score
 		void loadVector();
 		int rankScore(int score);
 		void putScore(int score, std::string name, int place);
+		void putScore(std::pair<int, std::string> p, size_t place);
 	private:
 		std::vector < std::pair < int, std::string > > scoreArray;
 		size_t trueSize, size;
