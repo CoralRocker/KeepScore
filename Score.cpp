@@ -107,3 +107,15 @@ void Score::putScore(int score, std::string name, int place)
 		}
 	}
 }
+void Score::putScore(std::pair<int std::string> p, size_t place)
+{
+	for(int i = size - 1; i >= place; i--)
+	{
+		if(i != place)
+		{
+			this->scoreArray[i] = scoreArray[i-1];
+		}else{
+			this->scoreArray[place] = p;
+		}
+	}
+}
